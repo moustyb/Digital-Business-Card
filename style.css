@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 2rem;
+  text-align: center;
+  max-width: 350px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card h1 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.5rem;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666;
+}
+
+.card p {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #005999;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0077cc;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #005999;
+}
+
+/* Dark mode */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .links a {
+  color: #66b2ff;
+}
+
+body.dark button {
+  background: #66b2ff;
+}
